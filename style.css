@@ -148,7 +148,58 @@ table {
     background-color: #444341;
     grid-column: 1/2;
     grid-row: 1/3;
+    padding: 20px;
+    color: white;
+    display: grid;
+    grid-template-rows: 200px 2fr 1fr;
 }
+
+.side-title{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 800;
+    font-size: 35px;
+}
+
+.icon{
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+
+.main-icons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.secondary-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .header {
     background-color: #f7f7f6;
@@ -190,8 +241,6 @@ table {
     font-weight: 600;
     font-size: 1.2rem;
 }
-
-.card-text {}
 
 .card-icons {
     display: flex;
@@ -273,3 +322,4 @@ table {
 #side-two {
     grid-row: 4/5;
 }
+
