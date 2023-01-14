@@ -154,15 +154,9 @@ table {
     grid-template-rows: 200px 2fr 1fr;
 }
 
-.side-title{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-weight: 800;
-    font-size: 35px;
-}
 
-.icon{
+
+.icon {
     display: flex;
     font-size: 20px;
     align-items: center;
@@ -171,12 +165,13 @@ table {
 }
 
 
-.main-icons{
+.main-icons {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.secondary-icons{
+
+.secondary-icons {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -311,8 +306,9 @@ table {
     /* overflow: scroll; */
     border-left: 10px rgb(117, 6, 71) solid;
     display: grid;
-    grid-template-rows: 20% 1fr 15%;
+    grid-template-rows: 1fr 1fr 1fr;
     padding: 10px;
+    gap: 12px;
 }
 
 #side-one {
@@ -323,3 +319,28 @@ table {
     grid-row: 4/5;
 }
 
+.side-title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+    font-size: 35px;
+}
+
+.a-title {
+    font-weight: 700;
+}
+
+.middle{
+    border-top: #444341 1px solid;
+    border-bottom: #444341 1px solid;
+    padding: 5px;
+}
+
+.avatar{
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
