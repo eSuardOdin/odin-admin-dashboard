@@ -138,7 +138,7 @@ table {
 */
 .container {
     display: grid;
-    grid-template-columns: minmax(180px, 1fr) 6fr;
+    grid-template-columns: minmax(270px, 1fr) 6fr;
     grid-template-rows: minmax(200px, 1fr) 6fr;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
@@ -200,7 +200,69 @@ table {
     background-color: #f7f7f6;
     grid-column: 2/3;
     grid-row: 1/2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    padding: 20px;
 }
+.h-one {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.h-one input {
+    border-radius: 25px;
+    border: 2px solid rgb(117, 6, 71);
+    padding: 15px; 
+    width: 40vw;
+    height: 5px; 
+}
+.h-two {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+}
+.h-three{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+.h-three div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.h-three > div > span{
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+.h-four{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 60px;
+}
+.h-four p {
+    background-color: rgb(117, 6, 71);
+    border-radius: 25%;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #e4e4e3;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
 
 .body {
     background-color: #e4e4e3;
@@ -321,26 +383,52 @@ table {
 
 .side-title {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 10px;
     font-weight: 800;
     font-size: 35px;
+    width: clamp(100px, 10vw, 15vw);
 }
 
 .a-title {
     font-weight: 700;
 }
 
-.middle{
+.middle {
     border-top: #444341 1px solid;
     border-bottom: #444341 1px solid;
     padding: 5px;
 }
 
-.avatar{
+
+.trend {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+}
+
+.trend-text {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/3;
+    justify-content: center;
+}
+
+.trend-owner {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.avatar {
     vertical-align: middle;
     width: 60px;
     height: 60px;
+    border-radius: 50%;
+}
+
+.big-avatar {
+    vertical-align: middle;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
 }
